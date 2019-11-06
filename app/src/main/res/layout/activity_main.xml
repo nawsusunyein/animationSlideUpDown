@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/imgWeChat"
+        android:src="@drawable/wechat"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <Button
+        android:id="@+id/btnSlideDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide Down"
+        android:onClick="makeImageSlideDown"
+        android:layout_below="@+id/imgWeChat"
+        android:layout_marginLeft="100dp"
+        android:layout_alignLeft="@+id/imgWeChat"
+        />
+
+    <Button
+        android:id="@+id/btnSlideUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide Up"
+        android:onClick="makeImageSlideUp"
+        android:layout_toRightOf="@+id/btnSlideDown"
+        android:layout_alignBottom="@id/btnSlideDown"
+        />
+    <Button
+        android:id="@+id/btnFadeIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fade In"
+        android:onClick="makeImageFadeIn"
+        android:layout_below="@+id/btnSlideDown"
+        android:layout_alignLeft="@+id/btnSlideDown"
+        />
+
+    <Button
+        android:id="@+id/btnFadeOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fade Out"
+        android:onClick="makeImageFadeOut"
+        android:layout_toRightOf="@+id/btnFadeIn"
+        android:layout_alignBottom="@+id/btnFadeIn"
+        />
+    <Button
+        android:id="@+id/btnZoomIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Zoom In"
+        android:onClick="makeImageZoomIn"
+        android:layout_below="@+id/btnFadeIn"
+        android:layout_alignLeft="@+id/btnFadeIn"
+        />
+    <Button
+        android:id="@+id/btnZoomOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Zoom Out"
+        android:onClick="makeImageZoomOut"
+        android:layout_toRightOf="@+id/btnZoomIn"
+        android:layout_alignBottom="@+id/btnZoomIn"
+        />
+</RelativeLayout>
