@@ -68,4 +68,22 @@
         android:layout_toRightOf="@+id/btnZoomIn"
         android:layout_alignBottom="@+id/btnZoomIn"
         />
+    <Button
+        android:id="@+id/btnRotateClockWise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Rotate Clockwise"
+        android:onClick="makeImageRotateClockWise"
+        android:layout_below="@+id/btnZoomIn"
+        android:layout_alignLeft="@+id/btnZoomIn"
+        />
+    <Button
+        android:id="@+id/btnRotatAntiClockWise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate AntiClickWise"
+        android:onClick="makeImageRotateAntiClockWise"
+        android:layout_toRightOf="@+id/btnRotateClockWise"
+        android:layout_alignBottom="@+id/btnRotateClockWise"
+        />
 </RelativeLayout>

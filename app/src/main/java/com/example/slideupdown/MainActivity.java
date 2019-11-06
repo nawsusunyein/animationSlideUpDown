@@ -57,4 +57,14 @@ public class MainActivity extends AppCompatActivity {
         Animation animZoomOut = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.zoom_out);
         imgWeChat.startAnimation(animZoomOut);
     }
+
+    public void makeImageRotateClockWise(View view){
+        Animation animClockWise = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_clockwise);
+        imgWeChat.startAnimation(animClockWise);
+    }
+
+    public void makeImageRotateAntiClockWise(View view){
+        Animation animAntiClockWise = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_anticlockwise);
+        imgWeChat.startAnimation(animAntiClockWise);
+    }
 }
